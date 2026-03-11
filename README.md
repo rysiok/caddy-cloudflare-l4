@@ -4,6 +4,8 @@
 
 Deploy a hassle-free Caddy server with built-in support for Cloudflare DNS-01 ACME challenges. Streamline your SSL certificate management and ensure your server stays secure without manual updates, making it an effortless and reliable solution.
 
+# Caddy Layer 4
+Integrated [Caddy Layer4](https://github.com/mholt/caddy-l4) handling. 
 
 ## Table of Contents
 
