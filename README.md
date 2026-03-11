@@ -4,9 +4,6 @@
 
 Deploy a hassle-free Caddy server with built-in support for Cloudflare DNS-01 ACME challenges. Streamline your SSL certificate management and ensure your server stays secure without manual updates, making it an effortless and reliable solution.
 
-# Caddy Layer 4
-Integrated [Caddy Layer4](https://github.com/mholt/caddy-l4) handling. 
-
 ## Table of Contents
 
 - [Features](#features)
@@ -28,7 +25,8 @@ Integrated [Caddy Layer4](https://github.com/mholt/caddy-l4) handling.
 - **Automated Builds**: Automatically checks for new Caddy releases and builds Docker images.
 - **Continuous Integration**: Utilizes GitHub Actions for seamless CI/CD.
 - **Cloudflare DNS Integration**: Integrates Cloudflare DNS for automatic SSL certificate management.
-- **Cloudflare Proxy IP Trust**: Includes the [caddy-cloudflare-ip](https://github.com/WeidiDeng/caddy-cloudflare-ip) module to automatically trust Cloudflare’s proxy IP ranges, ensuring correct client IP addresses are passed through and logged.
+- **Cloudflare Proxy IP Trust**: Includes the [caddy-cloudflare-ip](https://github.com/WeidiDeng/caddy-cloudflare-ip) and [caddy-combine-ip-ranges](https://github.com/fvbommel/caddy-combine-ip-ranges) modules to automatically trust Cloudflare’s proxy IP ranges, ensuring correct client IP addresses are passed through and logged.
+- **Layer4 handling**: Includes the [Caddy Layer4](https://github.com/mholt/caddy-l4) module. 
 - **Multi-Platform Support**: Builds images for multiple architectures, including `amd64`, `arm64`, `arm/v7` (Raspberry Pi), `ppc64le`, and `s390x` , ensuring compatibility across a wide range of devices and systems.
 - **Alpine-based Image**: Provides a lightweight Alpine-based image for smaller size and faster deployment.
 - **Manual Trigger**: Allows manual triggering of the build process.
