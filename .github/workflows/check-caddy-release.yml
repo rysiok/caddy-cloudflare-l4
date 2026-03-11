@@ -30,7 +30,7 @@ jobs:
 
       - name: Set DOCKERHUB_REPOSITORY_NAME with fallback
         run: |
-          echo "DOCKERHUB_REPOSITORY_NAME=${DOCKERHUB_REPOSITORY_NAME:-caddybuilds/caddy-cloudflare}" >> $GITHUB_ENV
+          echo "DOCKERHUB_REPOSITORY_NAME=${DOCKERHUB_REPOSITORY_NAME:-rysiok/caddy-cloudflare-l4}" >> $GITHUB_ENV
         env:
           DOCKERHUB_REPOSITORY_NAME: ${{ vars.DOCKERHUB_REPOSITORY_NAME || secrets.DOCKERHUB_REPOSITORY_NAME }}
 

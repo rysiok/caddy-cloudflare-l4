@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 GITHUB_REPO = "caddyserver/caddy"
 OFFICIAL_CADDY_IMAGE = "library/caddy"
 # --- Can be set as a repository secret or variable ---
-CUSTOM_IMAGE = os.environ.get('DOCKERHUB_REPOSITORY_NAME', "caddybuilds/caddy-cloudflare")
+CUSTOM_IMAGE = os.environ.get('DOCKERHUB_REPOSITORY_NAME', "rysiok/caddy-cloudflare-l4")
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', "")
 # DEPRECATED !!! CHANGE THIS if your tags start with 'v' (e.g., use 'v') !!!
 CUSTOM_TAG_PREFIX = ""
